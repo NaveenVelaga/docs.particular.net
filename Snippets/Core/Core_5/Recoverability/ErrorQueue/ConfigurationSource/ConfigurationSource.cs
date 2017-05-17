@@ -15,7 +15,7 @@
             {
                 var config = new MessageForwardingInCaseOfFaultConfig
                 {
-                    ErrorQueue = "error"
+                    ErrorQueue = "error@machinename"
                 };
 
                 return config as T;

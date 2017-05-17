@@ -12,7 +12,7 @@
         {
             return new MessageForwardingInCaseOfFaultConfig
             {
-                ErrorQueue = "error"
+                ErrorQueue = "error@machinename"
             };
         }
     }

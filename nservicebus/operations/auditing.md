@@ -40,7 +40,7 @@ There two settings that control Auditing:
 
 ### Queue Name
 
-The queue name to forward audit messages to
+The queue name to forward audit messages to. If forwarding audit messages to a remote queue, this queue name must match the expected remote queue format for the transport (e.g. `queue@machinename` for MSMQ)
 
 
 ### OverrideTimeToBeReceived

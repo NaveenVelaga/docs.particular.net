@@ -8,7 +8,7 @@
         {
             #region ErrorWithCode
 
-            endpointConfiguration.SendFailedMessagesTo("targetErrorQueue");
+            endpointConfiguration.SendFailedMessagesTo("targetErrorQueue@machinename");
 
             #endregion
         }

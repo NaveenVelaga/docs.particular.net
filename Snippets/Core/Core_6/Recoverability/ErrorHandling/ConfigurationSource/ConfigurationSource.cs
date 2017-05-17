@@ -15,7 +15,7 @@ namespace Core6.Recoverability.ErrorHandling.ConfigurationSource
             {
                 var config = new MessageForwardingInCaseOfFaultConfig
                 {
-                    ErrorQueue = "error"
+                    ErrorQueue = "error@machinename"
                 };
 
                 return config as T;

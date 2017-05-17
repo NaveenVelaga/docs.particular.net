@@ -10,7 +10,7 @@ class MyClass
 
         var endpointConfiguration = new EndpointConfiguration("myendpoint");
         endpointConfiguration.HeartbeatPlugin(
-            serviceControlQueue: "ServiceControl_Queue");
+            serviceControlQueue: "ServiceControl_Queue@machinename");
 
         #endregion
     }
@@ -21,7 +21,7 @@ class MyClass
 
         var endpointConfiguration = new EndpointConfiguration("myendpoint");
         endpointConfiguration.HeartbeatPlugin(
-            serviceControlQueue: "ServiceControl_Queue",
+            serviceControlQueue: "ServiceControl_Queue@machinename",
             frequency: TimeSpan.FromMinutes(2));
 
         #endregion
@@ -33,7 +33,7 @@ class MyClass
 
         var endpointConfiguration = new EndpointConfiguration("myendpoint");
         endpointConfiguration.HeartbeatPlugin(
-            serviceControlQueue: "ServiceControl_Queue",
+            serviceControlQueue: "ServiceControl_Queue@machinename",
             frequency: TimeSpan.FromSeconds(30),
             timeToLive: TimeSpan.FromMinutes(3));
 

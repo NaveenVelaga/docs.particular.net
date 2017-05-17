@@ -13,7 +13,7 @@ namespace Core6.Recoverability.ErrorHandling
         {
             return new MessageForwardingInCaseOfFaultConfig
             {
-                ErrorQueue = "error"
+                ErrorQueue = "error@machinename"
             };
         }
     }
